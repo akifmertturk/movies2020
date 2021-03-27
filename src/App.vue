@@ -96,7 +96,7 @@ export default {
       
       this.isLoading = true
 
-      var query = 'http://www.omdbapi.com/?y=2020&apikey=6d9c59a7&t=';
+      var query = 'https://www.omdbapi.com/?y=2020&apikey=6d9c59a7&t=';
       
       var newVal = val.split(' ').join('+'); // replace spaces with plus char to make string available for api query
 
