@@ -1,7 +1,7 @@
 # movies
 A web application that retrieves and displays movies with posters that are released in 2020.  
 **Omdb-API** was used to retrieve the data.  
-**Vue.js** version 2 with **javascrip** and **Vuetify** were used to create the app. 
+**Vue.js** version 2 with **javascript** and **Vuetify** were used to create the app. 
 ## Project setup
 ```
 npm install
