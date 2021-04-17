@@ -77,6 +77,7 @@ export default {
       return this.posterUrl
     },
     fields () {
+      console.log('this.model is: ');
       console.log(this.model);
 
       if (!this.model) return []
@@ -109,22 +110,29 @@ export default {
 
       // Lazily load input items
       console.log('query is: '+ query + newVal);
-      
+
       fetch(query + val + '*')
         .then(res => res.json())
         .then(res => {
+          console.log('query result is: ');
+          console.log(res);
           this.result.Title = res.Title
           this.result.imdbRating = res.imdbRating
           this.result.Year = res.Year
           this.result.Genre = res.Genre
           this.posterUrl = res.Poster
+
           if(this.entries.length < 1){
             // user types for a movie first time, fill the array with the result of the query
-            this.entries.push(this.result)
+            this.entries.push(this.result);
           }
           else if(typeof this.entries[0].Title === 'undefined') {
             // user deleted the search box, so clear the array
             this.entries = []
+          }
+          else {
+            // user types for another movie, add it to the array
+            this.entries.push(this.result)
           }
           // user uses the same item in the search box, do nothing
           console.log('entries len: ' + this.entries.length);
