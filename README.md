@@ -1,5 +1,9 @@
 # movies
+A web application that retrieves and displays movies with posters that are released in 2020.  
+**Omdb-API** was used to retrieve the data.  
+**Vue.js** version 2 for **JavaScript** and **Vuetify** were used to create the app.  
 
+**Live Version:** [click](https://pacific-brushlands-00858.herokuapp.com/)
 ## Project setup
 ```
 npm install
