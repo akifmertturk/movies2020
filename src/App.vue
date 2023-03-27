@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <v-app class="grey dark">
     <Navbar />
 
@@ -144,4 +144,19 @@ export default {
     },
   },
 };
+</script> -->
+
+<template>
+  <div>
+      Hello from App Vue: <strong>{{ message }}</strong>
+  </div>
+</template>
+<script>
+  export default {
+      data() {
+          return {
+              message: 'Message from App.vue',
+          };
+      }
+  };
 </script>
