@@ -148,15 +148,9 @@ export default {
 
 <template>
   <div>
-      Hello from App Vue: <strong>{{ message }}</strong>
+      Hello from App Vue
   </div>
 </template>
 <script>
-  export default {
-      data() {
-          return {
-              message: 'Message from App.vue',
-          };
-      }
-  };
+ 
 </script>
