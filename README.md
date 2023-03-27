@@ -63,7 +63,7 @@ This will create a production-ready build of the application in the dist/ direct
 ## Built With
 - Vue.js - JavaScript framework for building user interfaces.
 - Axios - Promise-based HTTP client for making API requests.
-- The Movie Database API - API for retrieving movie data.
+- The OMDb API - API for retrieving movie data.
 <!-- 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details. -->
