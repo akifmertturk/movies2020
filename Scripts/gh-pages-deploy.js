@@ -12,9 +12,12 @@ const fs = require("fs");
     await execa("git", ["--work-tree", folderName, "add", "--all"]);
     await execa("git", ["--work-tree", folderName, "commit", "-m", "gh-pages"]);
     console.log("Pushing to gh-pages...");
-    await execa("git", ["push", "origin", "HEAD:gh-pages", "--force"]);
+    await execa("git", ["push", "origin", "gh-pages", "--force"]);
+    console.log("ok 1")
     await execa("rm", ["-r", folderName]);
+    console.log("ok 2")
     await execa("git", ["checkout", "-f", "master"]);
+    console.log("ok 3")
     await execa("git", ["branch", "-D", "gh-pages"]);
     console.log("Successfully deployed, check your settings");
   } catch (e) {
