@@ -1,5 +1,3 @@
-const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
-  transpileDependencies: true,
-  publicPath: "/akifmertturk/movies2020/",
-});
+module.exports = {
+  publicPath: '/movies2020/'
+}
